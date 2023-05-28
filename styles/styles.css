@@ -24,6 +24,14 @@ Table of Contents:
     box-sizing: border-box;
 }
 
+a {
+ color: #899CA0;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
 /*////////////////////////
     2. Typography
 ////////////////////////*/
@@ -31,71 +39,145 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+button,
+input {
+    font-family: inherit;
+    font-size: 8px;
+}
+
+h2 {
+    text-align: center;
+    color: #1C2B32;
+    font-weight: 600;
+    padding: 20px;
+}
 
 /*////////////////////////
     3. Areas
 ////////////////////////*/
-
-
-
-/*///////////// 3.1 Header /////////////*/
-
-header {
-    background-image: url("/assets/images/mountains.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: top;
-    height: 1200px;
-
-}
-
-.header-section {
-    max-width: 1000px;
-    text-align: center;
-}
-
-.header-section h1 {
-    font-size: 55px;
-    font-weight: 900;
-    color: #1C2B32;
-}
-
-.header-section p {
-    font-size: 10px;
-    padding-bottom: 10px;
-    padding-top: 5px;
-}
-.form-check {
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-    padding: 3px 10px;
-    border: 1px solid #1C2B32;
-    background-color: transparent;
-}
-
-.form-submit {
-    border-bottom-right-radius: 10px;
-    border-top-right-radius: 10px;
-    margin-left: -5px;
-    padding: 3px;
-    border: 1px solid #1C2B32;
-    background-color: #1C2B32 ;
-    color: white;
-}
-
-
-/*///////////// 3.2 Testimonial /////////////*/
 main {
     max-width: 1000px;
+    margin-left: 100px;
+    margin-right: 100px;
+
 }
 
+/*///////////// 3.1 Header /////////////*/
+header {
+    background-image: url("/assets/images/mountains.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #1C2B32;
+    padding: 200px 150px;
+    text-align: center;
+
+}
+
+.header-div {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.header-section h1{
+    color: #1C2B32;
+    font-size: 80px;
+    font-weight: 600;
+
+
+}
+
+.header-section p{
+    font-weight: 200;
+    padding: 10px 0 6px 0;
+}
+
+.form-domein {
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    border: 1px solid #1C2B32;
+    background-color: transparent;
+    color: #1C2B32;
+    padding: 10px 30px 10px 2px;
+    font-size: 13px;
+}
+
+.form-beschikbaarheid {
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    border: 1px solid #1C2B32;
+    margin-left: -5px;
+    background-color: #1C2B32;
+    color: white;
+    padding: 10px 30px 10px 20px;
+    font-size: 13px;
+}
+
+/*///////////// 3.2 Testimonial /////////////*/
+
+.testimonials {
+    width: 100%;
+    padding: 50px 20px 20px 70px;
+    box-shadow: 5px 5px 10px rgba(0,0,0, 0.20);
+    border-radius: 10px;
+    margin: 10px 0 30px 0;
+
+}
+.quote {
+    position: absolute;
+    left: 120px;
+
+}
+
+.avatars {
+    width: 44px;
+    height: 44px;
+    vertical-align: bottom;
+    margin-top: 20px;
+
+}
 
 /*///////////// 3.3 Support /////////////*/
 
+.contact img {
+    width: 100%;
+    border-radius: 10px 10px;
+}
+
+.contact p {
+    padding: 10px;
+}
+
+.contact button {
+    border-radius: 20px;
+    padding: 15px 20px 15px 20px;
+    border: 1px solid #1C2B32;
+    color: white;
+    background-color: #1C2B32;
+    font-size: 15px
+}
 
 
 /*///////////// 3.4 Faq /////////////*/
 
+.veelgestelde-vragen details {
+    padding: 5px 0 10px 0;
+}
+
+.summary-styling {
+    border-radius: 10px;
+    border: 1px solid #899CA0;
+    background-color: #899CA0;
+    color: white;
+    padding: 15px;
+}
 
 
 /*///////////// 3.5 Footer /////////////*/
+
+footer {
+    background-color: #1C2B32;
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
